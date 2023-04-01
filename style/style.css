@@ -144,7 +144,7 @@ main {
     padding: 2px 10px;
 }
 
-@media(max-width: 768px) {
+@media only screen and (max-width: 688px) {
     body {
         width: 100%;
     }
@@ -157,7 +157,24 @@ main {
     }
 
     .collections {
-        display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    body {
+        width: 100%;
+    }
+
+    .top,
+    .menu,
+    .menu a,
+    .features {
+        flex-direction: column;
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr;
     }
 }
