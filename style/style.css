@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 40px 80px;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 37px 80px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    padding: 0px 5px
+}
+
+.menu a:hover {
+    background-color: rgba(128, 128, 128, 0.333);
+    border-radius: 4px;
+}
+
+
+/* top-style */
+.top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top-details {
+    width: 582px;
+    height: 270px;
+
+}
+
+.button a {
+    text-decoration: none;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 400;
+    background-color: #E02C6D;
+    padding: 3px 10px;
+}
+
+.top h1 {
+    font-size: 50px;
+}
+
+
+.top img {
+    width: 440px;
+    height: 414px;
+    margin-right: 115px;
+
+}
+
+/* Company Name styles */
+
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Collections styles */
+.collections-sections {
+    margin: 100px 80px;
+}
+
+.collections-title {
+    text-align: center;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 20px; */
+    grid-row-gap: 20px;
+
+}
+
+.collection {
+    width: 329px;
+    height: 476px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.collection-image img {
+    align-content: center;
+    width: 300px;
+    height: 256px;
+}
+
+.see-more a {
+    float: right;
+    color: #E02C6D;
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+/* Feature Styles */
+.features {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-details {
+    width: 610px;
+    height: 224px;
+}
+
+
+/* Footer styles */
+.footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: navy;
+}
+
+.footer-details {
+    text-align: center;
+    color: white;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px;
+}
+
+@media(max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .top,
+    .menu,
+    .menu a,
+    .features {
+        flex-direction: column;
+    }
+
+    .collections {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
